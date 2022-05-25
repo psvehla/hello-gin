@@ -17,7 +17,7 @@ To see how to make this your own, look here:
 
 ```bash
 export GO_POST_PROCESS_FILE="/usr/local/bin/gofmt -w"
-openapi-generator generate -i openapi3.yaml -g go-server
+openapi-generator generate -i openapi3.yaml -g go-gin-server
 ```
 
 ### Running the server
