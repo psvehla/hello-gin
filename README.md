@@ -31,13 +31,13 @@ go run main.go
 To run the server in a docker container
 
 ```bash
-docker build --network=host -t openapi .
+docker build --network=host -t openapi-gin .
 ```
 
 Once the image is built, just run
 
 ```bash
-docker run --rm -it openapi
+docker run --rm -p 8080:8080 -it openapi-gin
 ```
 
 ### Known Issue
