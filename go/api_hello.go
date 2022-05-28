@@ -17,7 +17,7 @@ import (
 
 // HelloHello - hello hello
 func HelloHello(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{})
+	c.JSON(http.StatusOK, gin.H{"message": "Hello, " + c.Param("name") + "."})
 }
 
 // HelloOpenapiJson - Download ./gen/http/openapi.json
